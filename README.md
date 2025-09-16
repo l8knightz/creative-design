@@ -57,7 +57,7 @@ Style: vector • Negative: gradients, photo texture
 ## Project Structure:
 ```
 creative-design
-├─ app.py                 # Gradio app (SVG + Photoreal engines)
+├─ app.py                 # Gradio app 
 ├─ requirements.txt
 ├─ Dockerfile
 ├─ docker-compose.yml
@@ -69,6 +69,9 @@ creative-design
 ## Troubleshooting
 
 403 on Photoreal: Your org must be verified for gpt-image-1.
+
 401 Unauthorized: Check OPENAI_API_KEY in .env.
+
 Port in use: Change GRADIO_SERVER_PORT and re-run.
+
 Windows line endings: If Dockerfile parse errors occur, normalize line endings on Linux: sed -i 's/\r$//' Dockerfile.
