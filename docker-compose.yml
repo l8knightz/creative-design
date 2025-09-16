@@ -1,0 +1,10 @@
+services:
+  creative-designs:
+    build: .
+    image: creative-designs:latest
+    container_name: creative-designs
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+    restart: unless-stopped
